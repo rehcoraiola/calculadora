@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    
+    justify-content: center;
+    min-height: 100vh;
+    background: #005e65c7;
+    color: #F2F2F2;
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: #004140;
+    border-radius: 10px;
+    padding: 70px 50px 50px 50px;
+}
+.container h1{
+   margin: auto; /*Centraliza quando não esta em uma div*/
+    font-size: 24px;
+    width: 260px;
+    text-align: center;
+}
+.subtitulo{
+    padding: 50px 0px 40px 0px;
+}
+.subtitulo h2{
+    padding: 0px 0px 10px 0px;
+}
+.boxtext{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+} 
+.boxtextjunto{
+    display: flex;
+    flex-direction: column;
+    
+}
+.boxtext1{
+    display: flex;
+    flex-direction: column;
+   
+}
+input{
+    all:unset;
+    background: #FFFFFF;
+    border: 1px solid #CED5EC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    color: #000;
+}
+
+.container p{
+    margin: auto; /*Centraliza quando não esta em uma div*/
+     font-size: 12px;
+     text-align: center;
+     padding: 50px 50px 20px 50px;
+     
+ }
+button{
+    all:unset;
+    box-sizing: border-box;
+    text-align: center;
+    background: #5F82FF;
+    border-radius: 5px;
+    color: white;
+    padding: 40px 0px;
+   cursor:default;
+    
+}
+button:hover{
+background-color: #093DF3;
+box-shadow: 0px 7px 24px rgba(9, 61, 243, 0.3);
+;
+}
+input::placeholder{
+    color: #0000005f;
+
+}
+.container.c2{
+    width: 400px;
+    max-height: 630px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: #E28625;
+
+}
+.c2 button{
+    padding: 40px 20px;
+}
+
+#valorDigitad{ 
+    background-color: #F2F2F2;
+    margin: 5px 20px 20px 20px;
+    padding: 0px 10px 10px 10px ;
+    border-radius: 5px;
+    color: rgb(155, 12, 41);
+    font-weight: 700;
+    font-size: 38px;
+}
+#inputestatistica{
+    margin-bottom: 20px;
+}
+#inputvalor{
+    margin-bottom: 20px;
+}

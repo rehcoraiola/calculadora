@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script src="calculadora.js"></script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container c2">
+        <h1>Alcance de Anúncio</h1>
+        <div class="subtitulo">
+            <h2>Calculadora</h2>
+            <span>Projeção aproximada da quantidade máxima de pessoas que visualizarão o mesmo anúncio</span>
+        </div>
+        <div class="boxtext1">
+            <label for="inputestatistica">Valor do investimento</label>
+            <input id="inputestatistica" type="number" placeholder="100,00">
+            <span>Visualizações Máxima</span>
+
+            <p id="valorDigitad"></p>
+        </div>
+        <button type="submit" onclick="estimativa()">Estimativa de Visualizações</button>
+    </div>
+    <div class="container">
+
+        <h1>Criar Anúncio</h1>
+
+        <div class="boxtext1">
+            <label for="inputnome">Nome do Anúncio</label>
+            <input id="inputnome" type="text" placeholder="Promoção de 50OFF">
+
+        </div>
+        <div class="boxtext1">
+            <label for="inputcliente">Cliente</label>
+            <input id="inputcliente" type="text">
+
+        </div>
+        <div class="boxtext">
+            <div class="boxtextjunto">
+                <label for="inputdateIni">Data de Início</label>
+                <input id="inputdateIni" type="date">
+            </div>
+            <div class="boxtextjunto">
+                <label for="inputdateEnd">Data do Fim</label>
+                <input id="inputdateEnd" type="date">
+            </div>
+
+        </div>
+        <div class="boxtext1">
+            <label for="inputvalor">Investimento por dia</label>
+            <input id="inputvalor" type="number" placeholder="100,00">
+
+        </div>
+        <!-- <p class="p">Crie sua anúncio online e alavanque sua relevância no mundo digital.</p> -->
+
+        <button type="submit" onclick="capturar()">Criar Anúncio</button>
+        <p id="valorDigitado"></p>
+
+    </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <!-- <a href="#">Filtre seus anuncios</a> -->
+        <h1>Filtrar Anúncios</h1>
+        <div class="boxtext1">
+            <label for="filtercliente">Cliente</label>
+            <input id="filtercliente" type="text">
+
+        </div>
+        <div class="boxtext">
+            <div class="boxtextjunto">
+                <label for="filterdateIni">Data de Início</label>
+                <input id="filterdateIni" type="date">
+            </div>
+            <div class="boxtextjunto">
+                <label for="filterdateEnd">Data do Fim</label>
+                <input id="filterdateEnd" type="date">
+            </div>
+        </div>
+        <p class="p">Filtre os anúncios por intervalo de data, nome do cliente ou por ambos.</p>
+        <button type="submit" onclick="filtro()">Filtrar</button>
+        <p id="valorDigitado"></p>
+    </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
